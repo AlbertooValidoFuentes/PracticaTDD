@@ -7,7 +7,6 @@ class Contador:
 
     def incrementar(self):
         if self.contador >= self.__valorLimite:
-            self.contador = self.__valorInicial
             print("Limite alcanzado")
         else:
             self.contador += self.__valorIncremento

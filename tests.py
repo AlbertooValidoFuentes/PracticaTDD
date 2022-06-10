@@ -16,7 +16,13 @@ class TestContador(unittest.TestCase):
         self.assertEqual(contador.valorInicial, 2)
         self.assertEqual(contador.valorIncremento, 2)
     
-    
-
+    def test_valores_iniciales(self):
+        '''
+            Funcion que contiene el test para comprobar que el valor inicial y incremento es correcto. 
+        '''
+        contador = Contador(10)
+        self.assertEqual(contador.valorInicial, 0)
+        self.assertEqual(contador.valorIncremento, 1)
+        
 if __name__ == '__main__':
     unittest.main()

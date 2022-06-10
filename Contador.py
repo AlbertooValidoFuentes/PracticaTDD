@@ -1,0 +1,4 @@
+class Contador:
+    pass
+    
+

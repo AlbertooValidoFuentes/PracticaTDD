@@ -4,3 +4,4 @@ class Contador:
         self.valorInicial = valorInicial
         self.valorIncremento = valorIncremento
         self.valorLimite = valorLimite
+

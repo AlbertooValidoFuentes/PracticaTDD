@@ -24,6 +24,17 @@ class TestContador(unittest.TestCase):
         self.assertEqual(contador.valorInicial, 0)
         self.assertEqual(contador.valorIncremento, 1)
         
-
+    def test_valores_noCambian(self):
+        '''
+            Funcion que contiene el test para comprobar que el valor inicial y incremento no cambian. 
+        '''
+        contador = Contador(10, 2, 2)
+        contador.valorInicial = 3
+        contador.valorIncremento = 3
+        contador.valorLimite = 3
+        self.assertEqual(contador.valorInicial, 2)
+        self.assertEqual(contador.valorIncremento, 2)
+        self.assertEqual(contador.valorLimite, 10)
+    
 if __name__ == '__main__':
     unittest.main()

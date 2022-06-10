@@ -13,7 +13,12 @@ class Contador:
             self.contador += self.__valorIncremento
             print("El contador va por: ", self.contador)
     
+    def valorActual(self):
+        print("El contador va por: ", self.contador)
     
+    def resetear(self):
+        self.contador = self.__valorInicial
+        print("El contador se ha reseteado a: ", self.contador)
     
     def getValorInicial(self):
         return self.__valorInicial

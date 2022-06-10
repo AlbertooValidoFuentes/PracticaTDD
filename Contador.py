@@ -13,6 +13,8 @@ class Contador:
             self.contador += self.__valorIncremento
             print("El contador va por: ", self.contador)
     
+    
+    
     def getValorInicial(self):
         return self.__valorInicial
     

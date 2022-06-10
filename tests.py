@@ -68,6 +68,16 @@ class TestContador(unittest.TestCase):
         self.assertEqual(contador.contador, 10)
         contador.incrementar()
         self.assertEqual(contador.contador, 2)    
+    
+    
+    def test_valorActualYReset(self):
+        '''
+            Test para comprobar que se puede resetear y mostrar el valor actual
+        '''
+        
+        contador = Contador(10, 2, 2)
+        contador.valorActual()
+        contador.resetear()
         
 if __name__ == '__main__':
     unittest.main()

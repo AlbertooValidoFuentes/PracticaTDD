@@ -24,5 +24,7 @@ class TestContador(unittest.TestCase):
         self.assertEqual(contador.valorInicial, 0)
         self.assertEqual(contador.valorIncremento, 1)
         
+        # Comprobamos que pasamos el argumento obligatorio
+        contador1 = Contador()
 if __name__ == '__main__':
     unittest.main()
